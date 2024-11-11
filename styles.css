@@ -1,0 +1,186 @@
+/* Estilo base: eliminamos márgenes y padding innecesarios */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo oscuro y texto claro */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Fondo oscuro */
+  color: #f1f1f1; /* Texto blanco */
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color: #1c1c1c; /* Fondo oscuro para el header */
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #3498db; /* Azul brillante */
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 15px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e74c3c; /* Rojo suave para hover */
+}
+
+/* Contenido principal */
+main {
+  padding: 40px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #f39c12; /* Naranja suave */
+  margin-bottom: 20px;
+}
+
+/* Estadísticas */
+.stats {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.stat-item {
+  background-color: #2c3e50; /* Fondo gris oscuro */
+  border: 2px solid #34495e; /* Borde más claro */
+  border-radius: 10px;
+  width: 200px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.stat-item:hover {
+  border-color: #3498db; /* Azul brillante al pasar el mouse */
+  transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+
+.stat-item h2 {
+  font-size: 2rem;
+  color: #ecf0f1; /* Texto blanco claro */
+}
+
+.stat-item p {
+  font-size: 1.8rem;
+  color: #f1c40f; /* Amarillo brillante */
+  font-weight: bold;
+}
+
+/* Sección de información sobre el bot */
+.bot-info {
+  margin-top: 40px;
+}
+
+.bot-info h3 {
+  font-size: 2rem;
+  color: #f39c12; /* Naranja suave */
+  margin-bottom: 20px;
+}
+
+.bot-info p {
+  font-size: 1.2rem;
+  color: #ecf0f1; /* Texto blanco claro */
+  margin-bottom: 30px;
+}
+
+.bot-image img {
+  border-radius: 10px;
+  border: 5px solid #3498db; /* Borde azul brillante */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón de Soporte */
+button.support-btn {
+  background-color: #9b59b6; /* Color violeta para el botón */
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 40px; /* Distancia añadida al botón */
+}
+
+button.support-btn:hover {
+  background-color: #8e44ad; /* Violeta oscuro en hover */
+  transform: scale(1.05);
+}
+
+button.support-btn:active {
+  background-color: #732d91; /* Violeta más oscuro al hacer clic */
+}
+
+/* Estilo para el pie de página */
+footer {
+  text-align: center;
+  background-color: #2c3e50; /* Fondo oscuro */
+  color: #ffffff;
+  padding: 20px 0;
+  margin-top: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Enlaces del footer */
+.footer-links a {
+  color: #3498db;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Animación de entrada para los elementos */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
